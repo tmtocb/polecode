@@ -16,3 +16,7 @@ group :development do
   gem 'listen', '~> 3.3'
   gem 'spring'
 end
+
+group :development, :test do
+  gem 'pry', '~> 0.13.1'
+end
