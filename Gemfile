@@ -23,6 +23,9 @@ gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'bootsnap', '>= 1.4.4', require: false
 
+# Slack integration:
+gem 'slack-notifier', '~> 2.4'
+
 group :development do
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'

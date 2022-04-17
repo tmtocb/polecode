@@ -152,6 +152,7 @@ GEM
     semantic_range (3.0.0)
     shoulda-matchers (5.1.0)
       activesupport (>= 5.2.0)
+    slack-notifier (2.4.0)
     spring (4.0.0)
     sprockets (4.0.3)
       concurrent-ruby (~> 1.0)
@@ -200,6 +201,7 @@ DEPENDENCIES
   rspec-rails (~> 6.0.0.rc1)
   sass-rails (>= 6)
   shoulda-matchers (~> 5.0)
+  slack-notifier (~> 2.4)
   spring
   sprockets-rails
   turbolinks (~> 5)
