@@ -28,7 +28,7 @@ module PolecodeFull
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
-    config.time_zone = "Europe/Warsaw"
+    config.time_zone = Rails.application.credentials.app_config[:time_zone]
     # config.eager_load_paths << Rails.root.join("extras")
 
     # Don't generate system test files.
