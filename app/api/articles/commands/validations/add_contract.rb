@@ -1,0 +1,7 @@
+class Articles::Commands::Validations::AddContract < ::Contracts::ApplicationContract
+  params do
+    required(:title).filled(:string)
+    required(:short_desc).filled(:string)
+    required(:full_desc).filled(:string)
+  end
+end
