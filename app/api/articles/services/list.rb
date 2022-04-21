@@ -20,7 +20,9 @@ module Articles
           id: article_entity.id,
           title: article_entity.title,
           short_desc: article_entity.short_desc,
-          full_desc: article_entity.full_desc
+          full_desc: article_entity.full_desc,
+          published: article_entity.published,
+          published_at: article_entity.published_at
         }
       end
     end

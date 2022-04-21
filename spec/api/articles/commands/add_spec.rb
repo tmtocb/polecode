@@ -11,7 +11,13 @@ RSpec.describe Articles::Commands::Add do
 
       it 'adds proper attributes' do
         subject
-        expect(Article.last).to have_attributes(title: 'Mateusz Podcast', short_desc: 'This is Mateusz Podcast', full_desc: 'Mateusz Podcast is a regular podcast we run')
+        expect(Article.last).to have_attributes(
+          title: 'Mateusz Podcast',
+          short_desc: 'This is Mateusz Podcast',
+          full_desc: 'Mateusz Podcast is a regular podcast we run',
+          published: false,
+          published_at: nil
+        )
       end
     end
 
