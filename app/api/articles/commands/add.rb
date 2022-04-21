@@ -16,7 +16,9 @@ module Articles
         {
           title: params[:title],
           short_desc: params[:short_desc],
-          full_desc: params[:full_desc]
+          full_desc: params[:full_desc],
+          published: false,
+          published_at: nil
         }
       end
 
