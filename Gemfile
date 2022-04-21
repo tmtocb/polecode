@@ -42,5 +42,6 @@ group :test do
 end
 
 group :development, :test do
+  gem 'bundler-audit'
   gem 'pry', '~> 0.13.1'
 end
