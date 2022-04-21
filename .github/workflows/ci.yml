@@ -2,6 +2,22 @@ name: Continuous-Integration
 on: [push, pull_request]
 
 jobs:
+  BundlerAudit:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Setup Ruby and Install Gems
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Verify Bundler
+        run: |
+          bundle exec bundler-audit update
+          bundle exec bundler-audit check
+
   RSpec:
     runs-on: ubuntu-18.04
     services:
