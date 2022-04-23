@@ -55,6 +55,10 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
+    better_errors (2.9.1)
+      coderay (>= 1.0.0)
+      erubi (>= 1.0.0)
+      rack (>= 0.9.0)
     bootsnap (1.11.1)
       msgpack (~> 1.2)
     builder (3.2.4)
@@ -231,6 +235,7 @@ DEPENDENCIES
   activerecord (= 6.1.5)
   activestorage (= 6.1.5)
   activesupport (= 6.1.5)
+  better_errors
   bootsnap (>= 1.4.4)
   bundler-audit
   dry-validation

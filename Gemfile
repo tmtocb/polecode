@@ -29,8 +29,9 @@ gem 'dry-validation'
 gem 'slack-notifier', '~> 2.4'
 
 group :development do
-  gem 'rack-mini-profiler', '~> 2.0'
+  gem 'better_errors'
   gem 'listen', '~> 3.3'
+  gem 'rack-mini-profiler', '~> 2.0'
   gem 'spring'
 end
 
