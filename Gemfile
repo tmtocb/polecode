@@ -30,6 +30,7 @@ gem 'slack-notifier', '~> 2.4'
 
 group :development do
   gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'listen', '~> 3.3'
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'spring'
