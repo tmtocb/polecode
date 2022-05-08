@@ -23,6 +23,8 @@ gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'bootsnap', '>= 1.4.4', require: false
 
+# Authentication:
+gem 'devise'
 # Validations:
 gem 'dry-validation'
 # Slack integration:
