@@ -2,7 +2,7 @@ module Articles
   module Services
     class List
       def call
-        all_articles.map do |article|
+        all_articles.order(id: :desc).map do |article|
           article_structure(article)
         end
       end
